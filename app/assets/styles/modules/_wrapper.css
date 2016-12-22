@@ -1,0 +1,23 @@
+.wrapper {
+  overflow: hidden;
+  /*hide negative margin of row__8*/
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+  &--medium {
+    max-width: 976px;
+    /*margin auto won't work until defining max-width*/
+  }
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &--b-margin {
+    margin-bottom: 1rem;
+    @mixin atSmall {
+      margin-bottom: 3.875rem;
+    }
+  }
+}

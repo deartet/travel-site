@@ -1,0 +1,33 @@
+.row {
+  @mixin clearfix;
+  &--gutters {
+    margin-right: -65px;
+    /*make the row 65px wider than it should be*/
+  }
+  &--gutters > div {
+    padding-right: 65px;
+  }
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+  @mixin atMedium {
+    &__b-margin-until-medium {
+    margin-bottom: 0;
+    }
+    &__medium-4 {
+      width: 33.33%;
+      float: left;
+    }
+    &__medium-8 {
+      width: 66.66%;
+      float: left;
+    }
+    &__medium-4--larger {
+      width: 38%;
+    }
+    &__medium-8--smaller {
+      width: 62%;
+    }
+  }
+ 
+}
