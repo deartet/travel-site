@@ -8,6 +8,9 @@
   strong {
     font-weight: 500;
   }
+  &--blue {
+    color: $mainBlue;
+  }
   &__icon {
     display: block;
     /*but the width still the same, so text align center won't work*/
@@ -15,6 +18,8 @@
     margin-right: auto;
     margin-bottom: .6rem;
     @mixin atSmall {
+      position: relative;
+      top: 8px;
       display: inline-block;
       margin-right: .5rem;
       margin-left: 0;
