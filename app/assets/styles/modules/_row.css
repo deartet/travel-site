@@ -4,18 +4,30 @@
     margin-right: -65px;
     /*make the row 65px wider than it should be*/
   }
-  &--gutters > div {
+   &--gutters > div {
     padding-right: 65px;
   }
+  &--gutters-large {
+    margin-right: -100px;
+  }
+    &--gutters-large > div {
+    padding-right: 100px;
+  }
+ 
+
   &__b-margin-until-medium {
     margin-bottom: 1rem;
   }
   @mixin atMedium {
     &__b-margin-until-medium {
-    margin-bottom: 0;
+      margin-bottom: 0;
     }
     &__medium-4 {
       width: 33.33%;
+      float: left;
+    }
+    &__medium-6 {
+      width: 50%;
       float: left;
     }
     &__medium-8 {
@@ -29,5 +41,4 @@
       width: 62%;
     }
   }
- 
 }
