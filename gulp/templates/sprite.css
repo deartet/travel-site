@@ -1,0 +1,19 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+{{#shapes}}
+  {{#first}}
+    .icon {
+      background-image: url('/assets/images/sprites/{{{sprite}}}');
+    }
+  {{/first}}
+
+  .icon--{{base}} {
+    width: {{width.outer}}px;
+    height: {{height.outer}}px;
+    background-position: {{position.relative.xy}};
+  }
+{{/shapes}}
+/* gulp svg sprite package make use of mustache template system, loop between brackets and loop times depend on how many icons it has */
+/* {{{}}} why 3 curly brackets? because path is random string, extra bracket is forward into svg folder and won't be escape */
+/* go to github svg-sprite npm readme to know how to use variable */
